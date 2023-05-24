@@ -42,10 +42,6 @@
         </div>
     </nav>
     
-
-
-
-    
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -86,123 +82,90 @@
     <section class="projects" id="projects">
   <title>Portfolio</title>
   <style>
-   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f1f1f1;
+  .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
     }
-  
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-  
+
     .card {
-      display: flex;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      overflow: hidden;
-    }
-  
-    .card-video {
-      width: 60%;
-      min-height: 400px;
-      position: relative;
-    }
-  
-    .card-content {
-      width: 40%;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      background-color: #eaeaea;
       padding: 20px;
+    }
+
+    .card-content {
+      text-align: center;
+    }
+
+    .card-video {
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-  
-    .card h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-  
-    .card p {
-      font-size: 16px;
-      color: #888;
-      line-height: 1.4;
-    }
-  
-    .card-button {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      color: crimson;
+
+    .card-video video {
+      width: 100%;
+      height: 100%;
     }
   </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1><center>Recent Projects</center></h1>
-      <div class="card">
-        <div class="card-content">
-          <h3>Naretu travel Agency Website</h3>
-          <p>Developed using HTML, CSS, and WordPress, our website offers a visually stunning and user-friendly experience. Explore a wide range of travel destinations, browse through enticing travel packages, and get inspired by captivating images and detailed descriptions of each location. With our interactive features, users can easily search for flights, book accommodations, and even customize their itineraries. Whether you're seeking adventure, relaxation, or cultural experiences, our travel agency website provides a seamless platform to turn your travel dreams into reality.</p>
-        </div>
-        <div class="card-video">
-          <video src="18.mp4" width="100%" height="100%" controls></video>
-         
-        </div>
-      </div>
-  
-      <div class="card">
-        <div class="card-video">
-          <video src="19.mp4" width="100%" height="100%" controls></video>
-          <a href="newpage.html" class="card-button">View</a>
-        </div>
-        <div class="card-content">
-          <h3>Electronic Repair Shop Management System</h3>
-          <p> The Electronic Repair Shop Management System is a comprehensive and efficient solution designed to streamline the operations of electronic repair shops. Developed using HTML, CSS, PHP, SQL, and Bootstrap, our system provides a user-friendly interface for managing repair requests, tracking inventory, and handling customer interactions. With our system, technicians can easily log repair jobs, update repair status, and generate invoices for customers. The inventory management feature enables tracking of spare parts, ensuring efficient stock control and reordering. Additionally, our system allows for customer management, including storing customer information, service history, and communication logs. From small repairs to complex electronic troubleshooting, our Electronic Repair Shop Management System simplifies processes, enhances productivity, and improves customer satisfaction.</p>
-        </div>
-      </div>
-  
-  
-      <div class="card">
-          <div class="card-content">
-            <h3>To-Do  List App</h3>
-            <p>The To-do list app is a simple and effective tool designed to help users stay organized and manage their tasks efficiently. Developed using HTML, CSS, and JavaScript, the app offers a clean and intuitive interface. Users can easily create and organize their to-do lists, add tasks, set due dates, and mark tasks as complete. With its user-friendly features, our app enables users to prioritize their tasks, set reminders, and track their progress. Whether it's for personal use or work-related tasks, our to-do list app streamlines the process of staying on top of responsibilities, ensuring productivity and peace of mind.</p>
-          </div>
-          <div class="card-video">
-            <video src="8.mp4" width="100%" height="100%" controls></video>
-           
-          </div>
-        </div>
-  
-        <div class="card">
-          <div class="card-video">
-            <video src="11.mp4" width="100%" height="100%" controls></video>
-            
-          </div>
-          <div class="card-content">
-            <h3>Weather App</h3>
-            <p>weather app is a user-friendly and visually appealing application designed to provide real-time weather information. Developed using HTML, CSS, and JavaScript, it offers a seamless and responsive experience across different devices. By integrating Rapid API, our app retrieves accurate and up-to-date weather data from reliable sources. Users can easily search for locations, view current weather conditions, check hourly and daily forecasts, and even receive alerts for severe weather conditions. With its intuitive interface and reliable data, our weather app ensures that users stay informed and prepared for any weather situation </p>
-          </div>
-        </div>
-  
-        <div class="card">
-          <div class="card-content">
-            <h3>Tip calculator</h3>
-            <p> Developed using HTML, CSS, and JavaScript, the app provides a user-friendly interface that allows users to enter the bill amount, select the desired tip percentage, and specify the number of people splitting the bill. With just a few clicks, our app instantly calculates the total amount to be paid, including the tip amount per person. It eliminates the hassle of manual calculations and ensures accurate results. Whether you're dining out, grabbing coffee, or enjoying a meal with friends, our tip calculator app makes splitting bills and tipping hassle-free.</p>
-          </div>
-          <div class="card-video">
-            <video src="10.mp4" width="100%" height="100%" controls></video>
-           
-          </div>
-        </div>
-  </div>
-  
+</head>
+<body>
+  <div class="container">
+    <h1><center>Recent Projects</center></h1>
 
+    <div class="card">
+      <div class="card-content">
+        <h3>Naretu travel Agency Website</h3>
+        <p>Developed using HTML, CSS, and WordPress, our website offers a visually stunning and user-friendly experience. Explore a wide range of travel destinations, browse through enticing travel packages, and get inspired by captivating images and detailed descriptions of each location. With our interactive features, users can easily search for flights, book accommodations, and even customize their itineraries. Whether you're seeking adventure, relaxation, or cultural experiences, our travel agency website provides a seamless platform to turn your travel dreams into reality.</p>
+      </div>
+      <div class="card-video">
+        <video src="18.mp4" width="100%" height="100%" controls></video>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-video">
+        <video src="19.mp4" width="100%" height="100%" controls></video>
+        <a href="newpage.html" class="card-button">View</a>
+      </div>
+      <div class="card-content">
+        <h3>Electronic Repair Shop Management System</h3>
+        <p>The Electronic Repair Shop Management System is a comprehensive and efficient solution designed to streamline the operations of electronic repair shops. Developed using HTML, CSS, PHP, SQL, and Bootstrap, our system provides a user-friendly interface for managing repair requests, tracking inventory, and handling customer interactions. With our system, technicians can easily log repair jobs, update repair status, and generate invoices for customers. The inventory management feature enables tracking of spare parts, ensuring efficient stock control and reordering. Additionally, our system allows for customer management, including storing customer information, service history, and communication logs. From small repairs to complex electronic troubleshooting, our Electronic Repair Shop Management System simplifies processes, enhances productivity, and improves customer satisfaction.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>To-Do List App</h3>
+        <p>The To-do list app is a simple and effective tool designed to help users stay organized and manage their tasks efficiently. Developed using HTML, CSS, and JavaScript, the app offers a clean and intuitive interface. Users can easily create and organize their to-do lists, add tasks, set due dates, and mark tasks as complete. With its user-friendly features, our app enables users to prioritize their tasks, set reminders, and track their progress. Whether it's for personal use or work-related tasks, our to-do list app streamlines the process of staying on top of responsibilities, ensuring productivity and peace of mind.</p>
+      </div>
+      <div class="card-video">
+        <video src="8.mp4" width="100%" height="100%" controls></video>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-video">
+        <video src="11.mp4" width="100%" height="100%" controls></video>
+      </div>
+      <div class="card-content">
+        <h3>Weather App</h3>
+        <p>The weather app is a user-friendly and visually appealing application designed to provide real-time weather information. Developed using HTML, CSS, and JavaScript, it offers a seamless and responsive experience across different devices. By integrating Rapid API, our app retrieves accurate and up-to-date weather data from reliable sources. Users can easily search for locations, view current weather conditions, check hourly and daily forecasts, and even receive alerts for severe weather conditions. With its intuitive interface and reliable data, our weather app ensures that users stay informed and prepared for any weather situation.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Tip Calculator</h3>
+        <p>Developed using HTML, CSS, and JavaScript, the app provides a user-friendly interface that allows users to enter the bill amount, select the desired tip percentage, and specify the number of people splitting the bill. With just a few clicks, our app instantly calculates the total amount to be paid, including the tip amount per person. It eliminates the hassle of manual calculations and ensures accurate results. Whether you're dining out, grabbing coffee, or enjoying a meal with friends, our tip calculator app makes splitting bills and tipping hassle-free.</p>
+      </div>
+      <div class="card-video">
+        <video src="10.mp4" width="100%" height="100%" controls></video>
+      </div>
+    </div>
   </div>
-</html>
 </section>
 
 
