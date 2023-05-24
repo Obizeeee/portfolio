@@ -25,7 +25,7 @@ html{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgba(39, 23, 26, 0.815);
+    background: #27374D;
 }
 .navbar .max-width{
     display: flex;
